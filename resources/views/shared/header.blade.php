@@ -1,11 +1,15 @@
+<!-- header: info + navbar + jumbotron -->
 <header>
+    <!-- info -->
     <div id="top-nav">
         <div id="info" class="container p-1">
-            <a href="" target="_blank">Dc power visa</a>
-            <a href="" target="_blank">Additional dc sites</a>
+            <a class="text-uppercase" href="" target="_blank">Dc power visa</a>
+            <a class="text-uppercase" href="" target="_blank">Additional dc sites</a>
         </div>        
     </div>
-    <div id="nav-bar" class="container py-3 d-flex align-items-center justify-content-between">
+    <!-- /info -->
+    <!-- navbar -->
+    <div id="nav-bar" class="container py-0 d-flex align-items-center justify-content-between">
         <div class="ec-logo">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo-dc-comics">
         </div>
@@ -23,4 +27,9 @@
             <a class="nav-link ec-nav-link" href="#">Search</a>
         </nav>
     </div>
+    <!-- /navbar -->
+    <!-- jumbotron -->
+    <div id="jumbotron"></div>
+    <!-- jumbotron -->
 </header>
+<!-- /header: info + navbar + jumbotron -->

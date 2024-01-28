@@ -8,7 +8,7 @@
 .ec-nav-link {
     color: $text-color;
     border-bottom: 3px solid $white;
-    padding: 40px 0;
+    padding: 45px 0;
 
     &:hover {
         color: $primary-color;
@@ -19,6 +19,7 @@
 
 #top-nav {
     background-color: $primary-color;
+    
     #info {
         text-align: end;
         a {
@@ -27,4 +28,10 @@
             cursor: pointer;
         }
     }
+}
+
+#jumbotron {
+    background-image: url("../img/jumbotron.jpg");
+    height: 400px;
+    background-size: cover;
 }
