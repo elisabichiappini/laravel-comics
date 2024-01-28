@@ -23,7 +23,7 @@
     #info {
         text-align: end;
         a {
-            all:unset;
+            all: unset;
             color: $white;
             cursor: pointer;
         }
@@ -39,4 +39,13 @@
 .ec-img {
     height: 180px;
     object-fit: cover;
+}
+
+#ec-top-footer {
+    background-image: url('../img/footer-bg.jpg');
+    height: 400px;
+    .ec-img-footer {
+        width: 400px;
+        object-fit: cover;
+    }
 }

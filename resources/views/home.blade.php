@@ -3,11 +3,12 @@
 
 <!-- istanzio la sezione main della pagina welcome -->
 @section('main')
+    <section>
     <!-- main: title + grid + button -->
-    <section class="bg-dark py-3">
+    <div class="bg-dark py-3">
         <!-- title -->
         <div class="container">
-            <h3 class="text-white text-uppercase py-1 px-3">{{ $elenco_film }}</h3>
+            <span class="text-white bg-primary text-uppercase py-1 px-3">{{ $elenco_film }}</span>
         </div>
         <!-- /title -->
         <!-- grid -->
@@ -23,10 +24,13 @@
         </div>
         <!-- /grid -->
         <!-- button -->
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary rounded-0 px-5 text-uppercase">Load more</button>
+        <div class="bg-dark">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary rounded-0 px-5 text-uppercase">Load more</button>
+            </div>
         </div>
         <!-- /button -->
+    </div>
     </section>
     <!-- /main: title + grid + button -->
 @endsection

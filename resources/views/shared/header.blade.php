@@ -3,7 +3,7 @@
     <!-- info -->
     <div id="top-nav">
         <div id="info" class="container p-1">
-            <a class="text-uppercase" href="" target="_blank">Dc power visa</a>
+            <a class="text-uppercase" href="" target="_blank">Dc power visa©</a>
             <a class="text-uppercase" href="" target="_blank">Additional dc sites</a>
         </div>        
     </div>
