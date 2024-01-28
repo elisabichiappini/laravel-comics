@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel Template</title>
-    <!--inclusione assets con direttiva vite-->
-    @vite('resources/js/app.js')
-    <!--/inclusione assets con direttiva vite-->
-</head>
-<body>
-    <h1>Template</h1>
-</body>
-</html>
+<!--  estendo il layouts di main nel file principale-->
+@extends ('layouts.main')
+
+<!-- istanzio la sezione main della pagina welcome -->
+@section('main')
+    <section>
+        <h2>{{ $elenco_film }}</h2>
+        <ul>
+        @foreach ($films as $film)
+        <li>{{ $film['title'] }} - {{ $film['type'] }}</li>
+        @endforeach
+        </ul>
+    </section>
+@endsection
