@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = [
+        'films' => config('dbcomics'),
+        'elenco_film' => 'elenco'
+    ];
+    return view('home', $comics);
+});
+
+Route::get('/comics', function () {
+    return view('comics');
 });

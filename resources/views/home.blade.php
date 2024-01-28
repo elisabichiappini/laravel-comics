@@ -7,7 +7,10 @@
         <h2>{{ $elenco_film }}</h2>
         <ul>
         @foreach ($films as $film)
-        <li>{{ $film['title'] }} - {{ $film['type'] }}</li>
+        <li>
+            <img src="{{ $film['thumb'] }}" alt="{{ $film['title']}}">
+            <h6>{{ $film['series']}}</h6>
+        </li>
         @endforeach
         </ul>
     </section>
