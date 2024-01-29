@@ -6,6 +6,16 @@
             <!-- menu -->
             <div class="ec-menu-footer">
                 <ul>
+                    @foreach ($links as $link)
+                        <li class="list-group-item">
+                            <h5>{{ $link['name_section'] }}</h5>
+                            <ul>
+                                @foreach ($link['sections'] as $section)
+                                    <li class="list-group-item">{{$section}}</li>
+                                @endforeach
+                            </ul>
+                        </li>
+                    @endforeach
                     <li class="list-group-item">
                         <h5 class="text-uppercase">Dc comics</h5>
                         <ul>
