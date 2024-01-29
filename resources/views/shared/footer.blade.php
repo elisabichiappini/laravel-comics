@@ -2,26 +2,20 @@
 <footer>
     <!-- top footer: menu + logo -->
     <div id="ec-top-footer">
-        <div class="container d-flex justify-content-between text-white">
+        <div class="container d-flex align-content-center justify-content-between text-white">
             <!-- menu -->
-            <div class="ec-menu-footer">
-                <ul>
+            <div id="ec-menu-footer" class="py-2">
+                <ul class="ec-box-menu d-flex flex-column flex-wrap ps-0">
                     @foreach ($links as $link)
                         <li class="list-group-item">
-                            <h5>{{ $link['name_section'] }}</h5>
-                            <ul>
+                            <h5 class="text-uppercase">{{ $link['name_section'] }}</h5>
+                            <ul class="ps-0 d-flex flex-column flex-wrap">
                                 @foreach ($link['sections'] as $section)
-                                    <li class="list-group-item">{{$section}}</li>
+                                    <li class="list-group-item py-1">{{$section}}</li>
                                 @endforeach
                             </ul>
                         </li>
                     @endforeach
-                    <li class="list-group-item">
-                        <h5 class="text-uppercase">Dc comics</h5>
-                        <ul>
-                            <li class="list-group-item">Characters</li>
-                        </ul>
-                    </li>
                 </ul>
                 <p class="text-white">All Site Content TIM and © 2020 DC Entertainment, uniess otherwise <span class="text-primary">noted here</span>. All rights reserved. <span class="text-primary">Cookies Setting.</span></p>
             </div>

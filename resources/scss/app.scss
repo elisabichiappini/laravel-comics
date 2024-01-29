@@ -1,8 +1,10 @@
 // css di bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-// importo file reset.scss
+// importo file variables.scss
 @import "_partials/variables.scss";
+@import "_partials/common.scss";
+@import "_partials/typography.scss";
 
 //scss
 .ec-nav-link {
@@ -43,9 +45,13 @@
 
 #ec-top-footer {
     background-image: url('../img/footer-bg.jpg');
-    height: 400px;
+    background-size: cover;
     .ec-img-footer {
         width: 400px;
         object-fit: cover;
     }
+}
+
+.ec-box-menu {
+    height: 400px;
 }
